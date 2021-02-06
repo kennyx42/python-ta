@@ -1,7 +1,4 @@
 import sys
-import os
-
-import argparse
 
 
 def palindrome(s):
