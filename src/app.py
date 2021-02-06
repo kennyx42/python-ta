@@ -1,12 +1,22 @@
 import sys
 import os
 
+import argparse
+
 
 def palindrome(s):
-    # your code goes here
-
+    s = s.replace(' ', '').lower()
+    check_palindrome = list(s)
+    reverse_s = ''.join(check_palindrome[::-1]) 
+    if s == reverse_s:
+        return(True)
+    else:
+        return(False)
+    
+    
 def solution(s):
     return palindrome(s)
+
 
 
 if __name__ == "__main__":
